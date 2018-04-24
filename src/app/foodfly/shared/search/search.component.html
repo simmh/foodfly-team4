@@ -10,7 +10,7 @@
         </span>
         <form (ngSubmit)="findFoodList()" class="form-search">
           <label for="search-input">
-            <input type="search" class="form-control" id="search-input" placeholder="주소를 입력해주세요." [formControl]="inputText" (focus)="clickStatus=true" >
+            <input type="search" class="form-control" id="search-input" placeholder="주소를 입력해주세요." [formControl]="inputText" (focus)="clickStatus=true"  autocomplete="off" >
           </label>
           <ul class="dropdown-menu search-list" *ngIf="clickStatus">
             <li class="none-search">
